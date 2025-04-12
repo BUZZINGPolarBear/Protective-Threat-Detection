@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import * as Styled from "./Styles/styledMainFrame";
 import { User, ChevronsLeft, ChevronsRight } from "lucide-react";
-
+//Assets
 import main_logo from "../assets/MainFrame/main_logo.png";
+//Components
+import { FileReadComponent } from "./CodePTD/FileReadComponent";
 
 export function MainFrame() {
 	const [isLeftPanelOpen, setIsLeftPanelOpen] = useState(true);
@@ -40,7 +42,9 @@ export function MainFrame() {
 						{isLeftPanelOpen && <span>탐지 결과 조회</span>}
 					</Styled.LeftPanelBtn>
 				</Styled.LeftPanel>
-				<Styled.MainContent></Styled.MainContent>
+				<Styled.MainContent>
+					{selectedMenu === "CI_Detector" && <FileReadComponent />}
+				</Styled.MainContent>
 			</Styled.ContentWrapper>
 		</div>
 	);

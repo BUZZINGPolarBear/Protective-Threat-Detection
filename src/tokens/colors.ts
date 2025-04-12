@@ -24,6 +24,8 @@ export const colorTokens = {
 	main_black_60: "#00000060",
 	main_black_40: "#00000040",
 	main_black_20: "#00000020",
+	main_black_10: "#00000010",
+	main_black_5: "#00000005",
 
 	main_gold: "#AD9A5F",
 	main_gold_80: "#AD9A5F80",
