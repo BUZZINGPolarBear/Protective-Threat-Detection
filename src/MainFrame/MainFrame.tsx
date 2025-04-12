@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import * as Styled from "./Styles/styledMainFrame";
 import { User, ChevronsLeft, ChevronsRight } from "lucide-react";
 
@@ -30,13 +30,13 @@ export function MainFrame() {
 					isSelected={selectedMenu === "CI_Detector"}
 					onClick={() => setSelectedMenu("CI_Detector")}
 				>
-					예방적 코드 분석
+					{isLeftPanelOpen && <span>예방적 코드 분석</span>}
 				</Styled.LeftPanelBtn>
 				<Styled.LeftPanelBtn
 					isSelected={selectedMenu === "History"}
 					onClick={() => setSelectedMenu("History")}
 				>
-					탐지 결과 조회
+					{isLeftPanelOpen && <span>탐지 결과 조회</span>}
 				</Styled.LeftPanelBtn>
 			</Styled.LeftPanel>
 		</div>
