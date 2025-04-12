@@ -4,6 +4,8 @@ export const colorTokens = {
 	main_green_60: "#00845D60",
 	main_green_40: "#00845D40",
 	main_green_20: "#00845D20",
+	main_green_10: "#00845D10",
+	main_green_5: "#00845D05",
 
 	main_red: "#E90061",
 	main_red_80: "#E9006180",

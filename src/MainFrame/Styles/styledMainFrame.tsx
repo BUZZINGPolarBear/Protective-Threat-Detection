@@ -28,7 +28,7 @@ export const LeftPanel = styled.div<LeftPanelProps>`
 	justify-content: flext-start;
 
 	padding-right: 10px;
-	background-color: ${colorTokens.main_green_20};
+	background-color: ${colorTokens.main_green_10};
 	width: ${(props) => (props.isOpen ? "180px" : "60px")};
 	height: 100vh;
 	transition: width 0.3s ease-in-out;
