@@ -1,6 +1,6 @@
 import { colorTokens } from "../../tokens/colors";
 import { styled } from "styled-components";
-import { LeftPanelProps } from "./interfaceMainFrame";
+import { LeftPanelProps, SelectedBtnProps } from "./interfaceMainFrame";
 
 export const Header = styled.header`
 	// background-color: ${colorTokens.main_black_20};
@@ -43,6 +43,22 @@ export const LeftPanelDiv = styled.div`
 	justify-content: flex-end;
 	width: 100%;
 	height: 50px;
+	transition: width 0.3s ease-in-out;
+	cursor: pointer;
+`;
+
+export const LeftPanelBtn = styled.div<SelectedBtnProps>`
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+
+	background-color: ${(props) =>
+		props.isSelected ? colorTokens.main_green_40 : "transparent"};
+	border-radius: 12px;
+	width: 100%;
+	height: 50px;
+	padding-rign: 10px;
 	transition: width 0.3s ease-in-out;
 	cursor: pointer;
 `;
