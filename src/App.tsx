@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MainFrame } from "./MainFrame/Main.Frame.tsx";
+import { MainFrame } from "./MainFrame/mainFrame.tsx";
 import { GlobalStyle } from "./globalStyle.ts";
 function App() {
 	return (
