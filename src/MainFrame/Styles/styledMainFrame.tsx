@@ -6,9 +6,15 @@ export const Header = styled.header`
 	// background-color: ${colorTokens.main_black_20};
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	color: ${colorTokens.main_black};
 	padding: 1rem;
 	height: 50px;
+`;
+
+export const LogoHorizontal = styled.img`
+	height: 40px;
+	object-fit: contain;
 `;
 
 export const UserIconWrapper = styled.div`
