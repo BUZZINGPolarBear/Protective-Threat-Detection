@@ -48,6 +48,8 @@ export const LeftPanelDiv = styled.div`
 `;
 
 export const LeftPanelBtn = styled.div<SelectedBtnProps>`
+	font-family: "Hana2.0", sans-serif;
+	font-weight: normal;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -55,6 +57,9 @@ export const LeftPanelBtn = styled.div<SelectedBtnProps>`
 
 	background-color: ${(props) =>
 		props.isSelected ? colorTokens.main_green_40 : "transparent"};
+
+	font-weight: ${(props) => (props.isSelected ? "bold" : "normal")};
+
 	border-radius: 12px;
 	width: 100%;
 	height: 50px;

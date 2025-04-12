@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import * as Styled from "./Styles/styledMainFrame";
 import { User, ChevronsLeft, ChevronsRight } from "lucide-react";
 
