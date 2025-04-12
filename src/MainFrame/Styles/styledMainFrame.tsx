@@ -67,3 +67,19 @@ export const LeftPanelBtn = styled.div<SelectedBtnProps>`
 	transition: width 0.3s ease-in-out;
 	cursor: pointer;
 `;
+
+export const ContentWrapper = styled.div`
+	display: flex;
+	flex-direction: row;
+	height: calc(100vh - 50px); // 헤더 제외한 높이
+`;
+
+export const MainContent = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	background-color: ${colorTokens.main_green_5};
+`;
